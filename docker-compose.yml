@@ -43,6 +43,7 @@ services:
       - mysqldata:/var/lib/mysql
       - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
       - ./docker/mysql/sql:/docker-entrypoint-initdb.d
+      # - $PWD/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
   # phpmyadminの定義
