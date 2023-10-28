@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS sample;
 USE sample;
 
-CREATE TABLE IF NOT EXISTS form
+CREATE TABLE IF NOT EXISTS `form`
 (
   `id`         int(11) NOT NULL AUTO_INCREMENT,
   `email`      varchar(255) NOT NULL,
