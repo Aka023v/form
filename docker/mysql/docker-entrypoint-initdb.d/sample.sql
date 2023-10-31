@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS contact;
-USE sample;
+USE contact;
 
 CREATE TABLE IF NOT EXISTS `form`
 (
