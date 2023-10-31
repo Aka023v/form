@@ -43,8 +43,6 @@ services:
       - mysqldata:/var/lib/mysql
       - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
       - ./docker/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
-      # - ./docker/mysql/:/docker-entrypoint-initdb.d/
-    # command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --secure-file-priv="/docker-entrypoint-initdb.d"
     ports:
       - 3306:3306
